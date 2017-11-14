@@ -1053,7 +1053,7 @@
                     "NumBastionHosts": { "Ref": "NumBastionHosts" },
                     "BastionAMIOS": "Amazon-Linux-HVM",
                     "BastionInstanceType": { "Ref": "BastionInstanceType" },
-                    "BastionBanner": "https://s3.amazonaws.com/quickstart-reference/linux/bastion/latest/scripts/banner_message.txt",
+                    "BastionBanner": "https://${QSS3BucketName}.s3.amazonaws.com/${QSS3KeyPrefix}modules/bastion/scripts/banner_message.txt",
                     "EnableBanner": "false",
                     "EnableTCPForwarding": "true",
                     "EnableX11Forwarding": "true"
